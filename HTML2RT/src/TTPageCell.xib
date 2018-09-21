@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TTPageCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="354"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="354"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIw-lV-jaf" customClass="YYTextView">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="354"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="111"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SIw-lV-jaf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OCT-OL-LWB"/>
+                <constraint firstItem="SIw-lV-jaf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ae8-40-AoC"/>
+                <constraint firstAttribute="trailing" secondItem="SIw-lV-jaf" secondAttribute="trailing" id="dLs-Qm-gfG"/>
+                <constraint firstAttribute="bottom" secondItem="SIw-lV-jaf" secondAttribute="bottom" id="m2T-69-Blj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="325" height="354"/>
+            <connections>
+                <outlet property="label" destination="SIw-lV-jaf" id="biN-i9-fdI"/>
+            </connections>
+            <point key="canvasLocation" x="-157.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

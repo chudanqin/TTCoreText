@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225E78312133AB7B0032AFDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78302133AB7B0032AFDE /* AppDelegate.m */; };
+		225E78342133AB7B0032AFDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78332133AB7B0032AFDE /* ViewController.m */; };
+		225E78372133AB7B0032AFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225E78352133AB7B0032AFDE /* Main.storyboard */; };
+		225E78392133AB7F0032AFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225E78382133AB7F0032AFDE /* Assets.xcassets */; };
+		225E783C2133AB7F0032AFDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225E783A2133AB7F0032AFDE /* LaunchScreen.storyboard */; };
+		225E783F2133AB7F0032AFDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E783E2133AB7F0032AFDE /* main.m */; };
+		225E785B2133AC0F0032AFDE /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78492133AC0F0032AFDE /* ONOXMLDocument.m */; };
+		225E785C2133AC0F0032AFDE /* katana.lex.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78522133AC0F0032AFDE /* katana.lex.c */; };
+		225E785D2133AC0F0032AFDE /* selector.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78532133AC0F0032AFDE /* selector.c */; };
+		225E785E2133AC0F0032AFDE /* katana.tab.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78542133AC0F0032AFDE /* katana.tab.c */; };
+		225E785F2133AC0F0032AFDE /* foundation.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78552133AC0F0032AFDE /* foundation.c */; };
+		225E78602133AC0F0032AFDE /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78562133AC0F0032AFDE /* parser.c */; };
+		225E78612133AC0F0032AFDE /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 225E78572133AC0F0032AFDE /* tokenizer.c */; };
+		225E78622133AC0F0032AFDE /* tt.css in Resources */ = {isa = PBXBuildFile; fileRef = 225E78592133AC0F0032AFDE /* tt.css */; };
+		225E78632133AC0F0032AFDE /* tt.html in Resources */ = {isa = PBXBuildFile; fileRef = 225E785A2133AC0F0032AFDE /* tt.html */; };
+		225E78692133AD770032AFDE /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 225E78672133AC390032AFDE /* libxml2.2.tbd */; };
+		225E786D2133D0FC0032AFDE /* TTXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E786C2133D0FC0032AFDE /* TTXMLParser.m */; };
+		225E7870213418E50032AFDE /* TTRichTextGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E786F213418E50032AFDE /* TTRichTextGenerator.m */; };
+		225E78732134EE940032AFDE /* TTRichTextDeclarationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78722134EE940032AFDE /* TTRichTextDeclarationConverter.m */; };
+		225E78762134F1EC0032AFDE /* TTRichTextConverterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78752134F1EC0032AFDE /* TTRichTextConverterContext.m */; };
+		225E78792135233F0032AFDE /* TTRichTextDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78782135233F0032AFDE /* TTRichTextDeclaration.m */; };
+		225E7882213926790032AFDE /* KatanaObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7881213926790032AFDE /* KatanaObjC.m */; };
+		225E78B8213E1A390032AFDE /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7885213E1A390032AFDE /* YYTextView.m */; };
+		225E78B9213E1A390032AFDE /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7889213E1A390032AFDE /* YYTextMagnifier.m */; };
+		225E78BA213E1A390032AFDE /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E788C213E1A390032AFDE /* YYTextContainerView.m */; };
+		225E78BB213E1A390032AFDE /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E788D213E1A390032AFDE /* YYTextEffectWindow.m */; };
+		225E78BC213E1A390032AFDE /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E788F213E1A390032AFDE /* YYTextInput.m */; };
+		225E78BD213E1A390032AFDE /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7890213E1A390032AFDE /* YYTextLayout.m */; };
+		225E78BE213E1A390032AFDE /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7892213E1A390032AFDE /* YYTextLine.m */; };
+		225E78BF213E1A390032AFDE /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7893213E1A390032AFDE /* YYTextSelectionView.m */; };
+		225E78C0213E1A390032AFDE /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7896213E1A390032AFDE /* YYTextKeyboardManager.m */; };
+		225E78C1213E1A390032AFDE /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7898213E1A390032AFDE /* YYTextDebugOption.m */; };
+		225E78C2213E1A390032AFDE /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E7899213E1A390032AFDE /* YYLabel.m */; };
+		225E78C3213E1A390032AFDE /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E789D213E1A390032AFDE /* YYTextRunDelegate.m */; };
+		225E78C4213E1A390032AFDE /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E789E213E1A390032AFDE /* YYTextParser.m */; };
+		225E78C5213E1A390032AFDE /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78A2213E1A390032AFDE /* YYTextAttribute.m */; };
+		225E78C6213E1A390032AFDE /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78A4213E1A390032AFDE /* YYTextArchiver.m */; };
+		225E78C7213E1A390032AFDE /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78A5213E1A390032AFDE /* YYTextRubyAnnotation.m */; };
+		225E78C8213E1A390032AFDE /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78A8213E1A390032AFDE /* YYTextUtilities.m */; };
+		225E78C9213E1A390032AFDE /* NSParagraphStyle+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78A9213E1A390032AFDE /* NSParagraphStyle+YYText.m */; };
+		225E78CA213E1A390032AFDE /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78AA213E1A390032AFDE /* NSAttributedString+YYText.m */; };
+		225E78CB213E1A390032AFDE /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78AD213E1A390032AFDE /* UIPasteboard+YYText.m */; };
+		225E78CC213E1A390032AFDE /* YYTextTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78B1213E1A390032AFDE /* YYTextTransaction.m */; };
+		225E78CD213E1A390032AFDE /* UIView+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78B2213E1A390032AFDE /* UIView+YYText.m */; };
+		225E78CE213E1A390032AFDE /* YYTextAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78B5213E1A390032AFDE /* YYTextAsyncLayer.m */; };
+		225E78CF213E1A390032AFDE /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78B6213E1A390032AFDE /* YYTextWeakProxy.m */; };
+		225E78D3213E1C1D0032AFDE /* TTBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78D1213E1C1D0032AFDE /* TTBookViewController.m */; };
+		225E78D4213E1C1D0032AFDE /* TTBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225E78D2213E1C1D0032AFDE /* TTBookViewController.xib */; };
+		225E78DD213E1D8A0032AFDE /* TTPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78DB213E1D8A0032AFDE /* TTPageCell.m */; };
+		225E78DE213E1D8A0032AFDE /* TTPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225E78DC213E1D8A0032AFDE /* TTPageCell.xib */; };
+		225E78E2214116CA0032AFDE /* TTTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78E1214116CA0032AFDE /* TTTextLayout.m */; };
+		22E771C721523F7A0079A4B4 /* TTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771C621523F7A0079A4B4 /* TTLabel.m */; };
+		22E771CD21533CD40079A4B4 /* TTAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */; };
+		22E771D0215344EA0079A4B4 /* TTTextSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771CF215344EA0079A4B4 /* TTTextSlice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		225E782C2133AB7B0032AFDE /* HTML2RT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTML2RT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		225E782F2133AB7B0032AFDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		225E78302133AB7B0032AFDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		225E78322133AB7B0032AFDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		225E78332133AB7B0032AFDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		225E78362133AB7B0032AFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		225E78382133AB7F0032AFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		225E783B2133AB7F0032AFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		225E783D2133AB7F0032AFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225E783E2133AB7F0032AFDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		225E78472133AC0F0032AFDE /* Ono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ono.h; sourceTree = "<group>"; };
+		225E78482133AC0F0032AFDE /* ONOXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONOXMLDocument.h; sourceTree = "<group>"; };
+		225E78492133AC0F0032AFDE /* ONOXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONOXMLDocument.m; sourceTree = "<group>"; };
+		225E784B2133AC0F0032AFDE /* katana.lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = katana.lex.h; sourceTree = "<group>"; };
+		225E784C2133AC0F0032AFDE /* selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selector.h; sourceTree = "<group>"; };
+		225E784D2133AC0F0032AFDE /* katana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = katana.h; sourceTree = "<group>"; };
+		225E784E2133AC0F0032AFDE /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		225E784F2133AC0F0032AFDE /* foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundation.h; sourceTree = "<group>"; };
+		225E78502133AC0F0032AFDE /* katana.tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = katana.tab.h; sourceTree = "<group>"; };
+		225E78512133AC0F0032AFDE /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		225E78522133AC0F0032AFDE /* katana.lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = katana.lex.c; sourceTree = "<group>"; };
+		225E78532133AC0F0032AFDE /* selector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selector.c; sourceTree = "<group>"; };
+		225E78542133AC0F0032AFDE /* katana.tab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = katana.tab.c; sourceTree = "<group>"; };
+		225E78552133AC0F0032AFDE /* foundation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = foundation.c; sourceTree = "<group>"; };
+		225E78562133AC0F0032AFDE /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		225E78572133AC0F0032AFDE /* tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tokenizer.c; sourceTree = "<group>"; };
+		225E78592133AC0F0032AFDE /* tt.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tt.css; sourceTree = "<group>"; };
+		225E785A2133AC0F0032AFDE /* tt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tt.html; sourceTree = "<group>"; };
+		225E78652133AC230032AFDE /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		225E78672133AC390032AFDE /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		225E786B2133D0FC0032AFDE /* TTXMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTXMLParser.h; sourceTree = "<group>"; };
+		225E786C2133D0FC0032AFDE /* TTXMLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTXMLParser.m; sourceTree = "<group>"; };
+		225E786E213418E50032AFDE /* TTRichTextGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRichTextGenerator.h; sourceTree = "<group>"; };
+		225E786F213418E50032AFDE /* TTRichTextGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRichTextGenerator.m; sourceTree = "<group>"; };
+		225E78712134EE940032AFDE /* TTRichTextDeclarationConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRichTextDeclarationConverter.h; sourceTree = "<group>"; };
+		225E78722134EE940032AFDE /* TTRichTextDeclarationConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRichTextDeclarationConverter.m; sourceTree = "<group>"; };
+		225E78742134F1EC0032AFDE /* TTRichTextConverterContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRichTextConverterContext.h; sourceTree = "<group>"; };
+		225E78752134F1EC0032AFDE /* TTRichTextConverterContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRichTextConverterContext.m; sourceTree = "<group>"; };
+		225E78772135233F0032AFDE /* TTRichTextDeclaration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTRichTextDeclaration.h; sourceTree = "<group>"; };
+		225E78782135233F0032AFDE /* TTRichTextDeclaration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTRichTextDeclaration.m; sourceTree = "<group>"; };
+		225E7880213926790032AFDE /* KatanaObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KatanaObjC.h; sourceTree = "<group>"; };
+		225E7881213926790032AFDE /* KatanaObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KatanaObjC.m; sourceTree = "<group>"; };
+		225E7884213E1A390032AFDE /* YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYText.h; sourceTree = "<group>"; };
+		225E7885213E1A390032AFDE /* YYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextView.m; sourceTree = "<group>"; };
+		225E7887213E1A390032AFDE /* YYTextSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextSelectionView.h; sourceTree = "<group>"; };
+		225E7888213E1A390032AFDE /* YYTextLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextLine.h; sourceTree = "<group>"; };
+		225E7889213E1A390032AFDE /* YYTextMagnifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextMagnifier.m; sourceTree = "<group>"; };
+		225E788A213E1A390032AFDE /* YYTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextLayout.h; sourceTree = "<group>"; };
+		225E788B213E1A390032AFDE /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextKeyboardManager.h; sourceTree = "<group>"; };
+		225E788C213E1A390032AFDE /* YYTextContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextContainerView.m; sourceTree = "<group>"; };
+		225E788D213E1A390032AFDE /* YYTextEffectWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextEffectWindow.m; sourceTree = "<group>"; };
+		225E788E213E1A390032AFDE /* YYTextDebugOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextDebugOption.h; sourceTree = "<group>"; };
+		225E788F213E1A390032AFDE /* YYTextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextInput.m; sourceTree = "<group>"; };
+		225E7890213E1A390032AFDE /* YYTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextLayout.m; sourceTree = "<group>"; };
+		225E7891213E1A390032AFDE /* YYTextMagnifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextMagnifier.h; sourceTree = "<group>"; };
+		225E7892213E1A390032AFDE /* YYTextLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextLine.m; sourceTree = "<group>"; };
+		225E7893213E1A390032AFDE /* YYTextSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextSelectionView.m; sourceTree = "<group>"; };
+		225E7894213E1A390032AFDE /* YYTextEffectWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextEffectWindow.h; sourceTree = "<group>"; };
+		225E7895213E1A390032AFDE /* YYTextContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextContainerView.h; sourceTree = "<group>"; };
+		225E7896213E1A390032AFDE /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextKeyboardManager.m; sourceTree = "<group>"; };
+		225E7897213E1A390032AFDE /* YYTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextInput.h; sourceTree = "<group>"; };
+		225E7898213E1A390032AFDE /* YYTextDebugOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextDebugOption.m; sourceTree = "<group>"; };
+		225E7899213E1A390032AFDE /* YYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLabel.m; sourceTree = "<group>"; };
+		225E789A213E1A390032AFDE /* YYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextView.h; sourceTree = "<group>"; };
+		225E789C213E1A390032AFDE /* YYTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextAttribute.h; sourceTree = "<group>"; };
+		225E789D213E1A390032AFDE /* YYTextRunDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextRunDelegate.m; sourceTree = "<group>"; };
+		225E789E213E1A390032AFDE /* YYTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextParser.m; sourceTree = "<group>"; };
+		225E789F213E1A390032AFDE /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextRubyAnnotation.h; sourceTree = "<group>"; };
+		225E78A0213E1A390032AFDE /* YYTextArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextArchiver.h; sourceTree = "<group>"; };
+		225E78A1213E1A390032AFDE /* YYTextRunDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextRunDelegate.h; sourceTree = "<group>"; };
+		225E78A2213E1A390032AFDE /* YYTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextAttribute.m; sourceTree = "<group>"; };
+		225E78A3213E1A390032AFDE /* YYTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextParser.h; sourceTree = "<group>"; };
+		225E78A4213E1A390032AFDE /* YYTextArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextArchiver.m; sourceTree = "<group>"; };
+		225E78A5213E1A390032AFDE /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextRubyAnnotation.m; sourceTree = "<group>"; };
+		225E78A6213E1A390032AFDE /* YYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLabel.h; sourceTree = "<group>"; };
+		225E78A8213E1A390032AFDE /* YYTextUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextUtilities.m; sourceTree = "<group>"; };
+		225E78A9213E1A390032AFDE /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
+		225E78AA213E1A390032AFDE /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		225E78AB213E1A390032AFDE /* UIView+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYText.h"; sourceTree = "<group>"; };
+		225E78AC213E1A390032AFDE /* YYTextTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTransaction.h; sourceTree = "<group>"; };
+		225E78AD213E1A390032AFDE /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+YYText.m"; sourceTree = "<group>"; };
+		225E78AE213E1A390032AFDE /* YYTextWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextWeakProxy.h; sourceTree = "<group>"; };
+		225E78AF213E1A390032AFDE /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextAsyncLayer.h; sourceTree = "<group>"; };
+		225E78B0213E1A390032AFDE /* YYTextUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextUtilities.h; sourceTree = "<group>"; };
+		225E78B1213E1A390032AFDE /* YYTextTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTransaction.m; sourceTree = "<group>"; };
+		225E78B2213E1A390032AFDE /* UIView+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYText.m"; sourceTree = "<group>"; };
+		225E78B3213E1A390032AFDE /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YYText.h"; sourceTree = "<group>"; };
+		225E78B4213E1A390032AFDE /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
+		225E78B5213E1A390032AFDE /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextAsyncLayer.m; sourceTree = "<group>"; };
+		225E78B6213E1A390032AFDE /* YYTextWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextWeakProxy.m; sourceTree = "<group>"; };
+		225E78B7213E1A390032AFDE /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+YYText.h"; sourceTree = "<group>"; };
+		225E78D0213E1C1D0032AFDE /* TTBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBookViewController.h; sourceTree = "<group>"; };
+		225E78D1213E1C1D0032AFDE /* TTBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTBookViewController.m; sourceTree = "<group>"; };
+		225E78D2213E1C1D0032AFDE /* TTBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTBookViewController.xib; sourceTree = "<group>"; };
+		225E78DA213E1D8A0032AFDE /* TTPageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTPageCell.h; sourceTree = "<group>"; };
+		225E78DB213E1D8A0032AFDE /* TTPageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTPageCell.m; sourceTree = "<group>"; };
+		225E78DC213E1D8A0032AFDE /* TTPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTPageCell.xib; sourceTree = "<group>"; };
+		225E78E0214116CA0032AFDE /* TTTextLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTextLayout.h; sourceTree = "<group>"; };
+		225E78E1214116CA0032AFDE /* TTTextLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextLayout.m; sourceTree = "<group>"; };
+		22DABAC2215397BF00B89062 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		22DABAC3215397BF00B89062 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		22DABAC42153C38200B89062 /* TTAtomicDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAtomicDef.h; sourceTree = "<group>"; };
+		22E771C521523F7A0079A4B4 /* TTLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLabel.h; sourceTree = "<group>"; };
+		22E771C621523F7A0079A4B4 /* TTLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLabel.m; sourceTree = "<group>"; };
+		22E771CB21533CD40079A4B4 /* TTAsyncLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAsyncLayer.h; sourceTree = "<group>"; };
+		22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAsyncLayer.m; sourceTree = "<group>"; };
+		22E771CE215344EA0079A4B4 /* TTTextSlice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTextSlice.h; sourceTree = "<group>"; };
+		22E771CF215344EA0079A4B4 /* TTTextSlice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextSlice.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		225E78292133AB7B0032AFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225E78692133AD770032AFDE /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		225E78232133AB7B0032AFDE = {
+			isa = PBXGroup;
+			children = (
+				225E782E2133AB7B0032AFDE /* HTML2RT */,
+				225E782D2133AB7B0032AFDE /* Products */,
+				225E78642133AC230032AFDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		225E782D2133AB7B0032AFDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				225E782C2133AB7B0032AFDE /* HTML2RT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		225E782E2133AB7B0032AFDE /* HTML2RT */ = {
+			isa = PBXGroup;
+			children = (
+				225E786A2133AD940032AFDE /* src */,
+				225E78452133AC0F0032AFDE /* libs */,
+				225E78582133AC0F0032AFDE /* res */,
+				225E782F2133AB7B0032AFDE /* AppDelegate.h */,
+				225E78302133AB7B0032AFDE /* AppDelegate.m */,
+				225E78322133AB7B0032AFDE /* ViewController.h */,
+				225E78332133AB7B0032AFDE /* ViewController.m */,
+				225E78352133AB7B0032AFDE /* Main.storyboard */,
+				225E78382133AB7F0032AFDE /* Assets.xcassets */,
+				225E783A2133AB7F0032AFDE /* LaunchScreen.storyboard */,
+				225E783D2133AB7F0032AFDE /* Info.plist */,
+				225E783E2133AB7F0032AFDE /* main.m */,
+			);
+			path = HTML2RT;
+			sourceTree = "<group>";
+		};
+		225E78452133AC0F0032AFDE /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				22DABAC1215397BF00B89062 /* EXTScope */,
+				225E7883213E1A390032AFDE /* YYText */,
+				225E78462133AC0F0032AFDE /* Ono */,
+				225E784A2133AC0F0032AFDE /* katana */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		225E78462133AC0F0032AFDE /* Ono */ = {
+			isa = PBXGroup;
+			children = (
+				225E78472133AC0F0032AFDE /* Ono.h */,
+				225E78482133AC0F0032AFDE /* ONOXMLDocument.h */,
+				225E78492133AC0F0032AFDE /* ONOXMLDocument.m */,
+			);
+			path = Ono;
+			sourceTree = "<group>";
+		};
+		225E784A2133AC0F0032AFDE /* katana */ = {
+			isa = PBXGroup;
+			children = (
+				225E784B2133AC0F0032AFDE /* katana.lex.h */,
+				225E784C2133AC0F0032AFDE /* selector.h */,
+				225E784D2133AC0F0032AFDE /* katana.h */,
+				225E784E2133AC0F0032AFDE /* parser.h */,
+				225E784F2133AC0F0032AFDE /* foundation.h */,
+				225E78502133AC0F0032AFDE /* katana.tab.h */,
+				225E78512133AC0F0032AFDE /* tokenizer.h */,
+				225E78522133AC0F0032AFDE /* katana.lex.c */,
+				225E78532133AC0F0032AFDE /* selector.c */,
+				225E78542133AC0F0032AFDE /* katana.tab.c */,
+				225E78552133AC0F0032AFDE /* foundation.c */,
+				225E78562133AC0F0032AFDE /* parser.c */,
+				225E78572133AC0F0032AFDE /* tokenizer.c */,
+			);
+			path = katana;
+			sourceTree = "<group>";
+		};
+		225E78582133AC0F0032AFDE /* res */ = {
+			isa = PBXGroup;
+			children = (
+				225E78592133AC0F0032AFDE /* tt.css */,
+				225E785A2133AC0F0032AFDE /* tt.html */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		225E78642133AC230032AFDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225E78672133AC390032AFDE /* libxml2.2.tbd */,
+				225E78652133AC230032AFDE /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		225E786A2133AD940032AFDE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				225E78DF214116AA0032AFDE /* CT */,
+				225E786B2133D0FC0032AFDE /* TTXMLParser.h */,
+				225E786C2133D0FC0032AFDE /* TTXMLParser.m */,
+				225E786E213418E50032AFDE /* TTRichTextGenerator.h */,
+				225E786F213418E50032AFDE /* TTRichTextGenerator.m */,
+				225E78712134EE940032AFDE /* TTRichTextDeclarationConverter.h */,
+				225E78722134EE940032AFDE /* TTRichTextDeclarationConverter.m */,
+				225E78742134F1EC0032AFDE /* TTRichTextConverterContext.h */,
+				225E78752134F1EC0032AFDE /* TTRichTextConverterContext.m */,
+				225E78772135233F0032AFDE /* TTRichTextDeclaration.h */,
+				225E78782135233F0032AFDE /* TTRichTextDeclaration.m */,
+				225E7880213926790032AFDE /* KatanaObjC.h */,
+				225E7881213926790032AFDE /* KatanaObjC.m */,
+				225E78D0213E1C1D0032AFDE /* TTBookViewController.h */,
+				225E78D1213E1C1D0032AFDE /* TTBookViewController.m */,
+				225E78D2213E1C1D0032AFDE /* TTBookViewController.xib */,
+				225E78DA213E1D8A0032AFDE /* TTPageCell.h */,
+				225E78DB213E1D8A0032AFDE /* TTPageCell.m */,
+				225E78DC213E1D8A0032AFDE /* TTPageCell.xib */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		225E7883213E1A390032AFDE /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				225E7886213E1A390032AFDE /* Component */,
+				225E789B213E1A390032AFDE /* String */,
+				225E78A7213E1A390032AFDE /* Utility */,
+				225E78A6213E1A390032AFDE /* YYLabel.h */,
+				225E7899213E1A390032AFDE /* YYLabel.m */,
+				225E7884213E1A390032AFDE /* YYText.h */,
+				225E789A213E1A390032AFDE /* YYTextView.h */,
+				225E7885213E1A390032AFDE /* YYTextView.m */,
+			);
+			path = YYText;
+			sourceTree = "<group>";
+		};
+		225E7886213E1A390032AFDE /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				225E7895213E1A390032AFDE /* YYTextContainerView.h */,
+				225E788C213E1A390032AFDE /* YYTextContainerView.m */,
+				225E788E213E1A390032AFDE /* YYTextDebugOption.h */,
+				225E7898213E1A390032AFDE /* YYTextDebugOption.m */,
+				225E7894213E1A390032AFDE /* YYTextEffectWindow.h */,
+				225E788D213E1A390032AFDE /* YYTextEffectWindow.m */,
+				225E7897213E1A390032AFDE /* YYTextInput.h */,
+				225E788F213E1A390032AFDE /* YYTextInput.m */,
+				225E788B213E1A390032AFDE /* YYTextKeyboardManager.h */,
+				225E7896213E1A390032AFDE /* YYTextKeyboardManager.m */,
+				225E788A213E1A390032AFDE /* YYTextLayout.h */,
+				225E7890213E1A390032AFDE /* YYTextLayout.m */,
+				225E7888213E1A390032AFDE /* YYTextLine.h */,
+				225E7892213E1A390032AFDE /* YYTextLine.m */,
+				225E7891213E1A390032AFDE /* YYTextMagnifier.h */,
+				225E7889213E1A390032AFDE /* YYTextMagnifier.m */,
+				225E7887213E1A390032AFDE /* YYTextSelectionView.h */,
+				225E7893213E1A390032AFDE /* YYTextSelectionView.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		225E789B213E1A390032AFDE /* String */ = {
+			isa = PBXGroup;
+			children = (
+				225E789C213E1A390032AFDE /* YYTextAttribute.h */,
+				225E789D213E1A390032AFDE /* YYTextRunDelegate.m */,
+				225E789E213E1A390032AFDE /* YYTextParser.m */,
+				225E789F213E1A390032AFDE /* YYTextRubyAnnotation.h */,
+				225E78A0213E1A390032AFDE /* YYTextArchiver.h */,
+				225E78A1213E1A390032AFDE /* YYTextRunDelegate.h */,
+				225E78A2213E1A390032AFDE /* YYTextAttribute.m */,
+				225E78A3213E1A390032AFDE /* YYTextParser.h */,
+				225E78A4213E1A390032AFDE /* YYTextArchiver.m */,
+				225E78A5213E1A390032AFDE /* YYTextRubyAnnotation.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		225E78A7213E1A390032AFDE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				225E78A8213E1A390032AFDE /* YYTextUtilities.m */,
+				225E78A9213E1A390032AFDE /* NSParagraphStyle+YYText.m */,
+				225E78AA213E1A390032AFDE /* NSAttributedString+YYText.m */,
+				225E78AB213E1A390032AFDE /* UIView+YYText.h */,
+				225E78AC213E1A390032AFDE /* YYTextTransaction.h */,
+				225E78AD213E1A390032AFDE /* UIPasteboard+YYText.m */,
+				225E78AE213E1A390032AFDE /* YYTextWeakProxy.h */,
+				225E78AF213E1A390032AFDE /* YYTextAsyncLayer.h */,
+				225E78B0213E1A390032AFDE /* YYTextUtilities.h */,
+				225E78B1213E1A390032AFDE /* YYTextTransaction.m */,
+				225E78B2213E1A390032AFDE /* UIView+YYText.m */,
+				225E78B3213E1A390032AFDE /* NSAttributedString+YYText.h */,
+				225E78B4213E1A390032AFDE /* NSParagraphStyle+YYText.h */,
+				225E78B5213E1A390032AFDE /* YYTextAsyncLayer.m */,
+				225E78B6213E1A390032AFDE /* YYTextWeakProxy.m */,
+				225E78B7213E1A390032AFDE /* UIPasteboard+YYText.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		225E78DF214116AA0032AFDE /* CT */ = {
+			isa = PBXGroup;
+			children = (
+				22E771CB21533CD40079A4B4 /* TTAsyncLayer.h */,
+				22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */,
+				22E771C521523F7A0079A4B4 /* TTLabel.h */,
+				22E771C621523F7A0079A4B4 /* TTLabel.m */,
+				225E78E0214116CA0032AFDE /* TTTextLayout.h */,
+				225E78E1214116CA0032AFDE /* TTTextLayout.m */,
+				22E771CE215344EA0079A4B4 /* TTTextSlice.h */,
+				22E771CF215344EA0079A4B4 /* TTTextSlice.m */,
+				22DABAC42153C38200B89062 /* TTAtomicDef.h */,
+			);
+			path = CT;
+			sourceTree = "<group>";
+		};
+		22DABAC1215397BF00B89062 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				22DABAC2215397BF00B89062 /* metamacros.h */,
+				22DABAC3215397BF00B89062 /* EXTScope.h */,
+			);
+			path = EXTScope;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		225E782B2133AB7B0032AFDE /* HTML2RT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225E78422133AB7F0032AFDE /* Build configuration list for PBXNativeTarget "HTML2RT" */;
+			buildPhases = (
+				225E78282133AB7B0032AFDE /* Sources */,
+				225E78292133AB7B0032AFDE /* Frameworks */,
+				225E782A2133AB7B0032AFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTML2RT;
+			productName = HTML2RT;
+			productReference = 225E782C2133AB7B0032AFDE /* HTML2RT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		225E78242133AB7B0032AFDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = chudanqin;
+				TargetAttributes = {
+					225E782B2133AB7B0032AFDE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 225E78272133AB7B0032AFDE /* Build configuration list for PBXProject "HTML2RT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 225E78232133AB7B0032AFDE;
+			productRefGroup = 225E782D2133AB7B0032AFDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				225E782B2133AB7B0032AFDE /* HTML2RT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		225E782A2133AB7B0032AFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225E783C2133AB7F0032AFDE /* LaunchScreen.storyboard in Resources */,
+				225E78D4213E1C1D0032AFDE /* TTBookViewController.xib in Resources */,
+				225E78632133AC0F0032AFDE /* tt.html in Resources */,
+				225E78622133AC0F0032AFDE /* tt.css in Resources */,
+				225E78392133AB7F0032AFDE /* Assets.xcassets in Resources */,
+				225E78DE213E1D8A0032AFDE /* TTPageCell.xib in Resources */,
+				225E78372133AB7B0032AFDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		225E78282133AB7B0032AFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225E78C9213E1A390032AFDE /* NSParagraphStyle+YYText.m in Sources */,
+				225E78D3213E1C1D0032AFDE /* TTBookViewController.m in Sources */,
+				225E78CE213E1A390032AFDE /* YYTextAsyncLayer.m in Sources */,
+				225E78CD213E1A390032AFDE /* UIView+YYText.m in Sources */,
+				225E785D2133AC0F0032AFDE /* selector.c in Sources */,
+				225E785C2133AC0F0032AFDE /* katana.lex.c in Sources */,
+				225E78342133AB7B0032AFDE /* ViewController.m in Sources */,
+				225E78C0213E1A390032AFDE /* YYTextKeyboardManager.m in Sources */,
+				225E783F2133AB7F0032AFDE /* main.m in Sources */,
+				22E771D0215344EA0079A4B4 /* TTTextSlice.m in Sources */,
+				225E78C7213E1A390032AFDE /* YYTextRubyAnnotation.m in Sources */,
+				225E78602133AC0F0032AFDE /* parser.c in Sources */,
+				225E7882213926790032AFDE /* KatanaObjC.m in Sources */,
+				225E785F2133AC0F0032AFDE /* foundation.c in Sources */,
+				225E78B8213E1A390032AFDE /* YYTextView.m in Sources */,
+				225E7870213418E50032AFDE /* TTRichTextGenerator.m in Sources */,
+				225E785E2133AC0F0032AFDE /* katana.tab.c in Sources */,
+				225E78DD213E1D8A0032AFDE /* TTPageCell.m in Sources */,
+				225E78CB213E1A390032AFDE /* UIPasteboard+YYText.m in Sources */,
+				225E78BA213E1A390032AFDE /* YYTextContainerView.m in Sources */,
+				225E78732134EE940032AFDE /* TTRichTextDeclarationConverter.m in Sources */,
+				225E78792135233F0032AFDE /* TTRichTextDeclaration.m in Sources */,
+				225E78CA213E1A390032AFDE /* NSAttributedString+YYText.m in Sources */,
+				225E78BC213E1A390032AFDE /* YYTextInput.m in Sources */,
+				225E78E2214116CA0032AFDE /* TTTextLayout.m in Sources */,
+				225E78612133AC0F0032AFDE /* tokenizer.c in Sources */,
+				225E78B9213E1A390032AFDE /* YYTextMagnifier.m in Sources */,
+				225E78C8213E1A390032AFDE /* YYTextUtilities.m in Sources */,
+				225E78C5213E1A390032AFDE /* YYTextAttribute.m in Sources */,
+				22E771C721523F7A0079A4B4 /* TTLabel.m in Sources */,
+				225E78BF213E1A390032AFDE /* YYTextSelectionView.m in Sources */,
+				225E78C4213E1A390032AFDE /* YYTextParser.m in Sources */,
+				225E78BB213E1A390032AFDE /* YYTextEffectWindow.m in Sources */,
+				225E78312133AB7B0032AFDE /* AppDelegate.m in Sources */,
+				225E78CF213E1A390032AFDE /* YYTextWeakProxy.m in Sources */,
+				225E786D2133D0FC0032AFDE /* TTXMLParser.m in Sources */,
+				225E78C3213E1A390032AFDE /* YYTextRunDelegate.m in Sources */,
+				225E785B2133AC0F0032AFDE /* ONOXMLDocument.m in Sources */,
+				225E78BE213E1A390032AFDE /* YYTextLine.m in Sources */,
+				225E78CC213E1A390032AFDE /* YYTextTransaction.m in Sources */,
+				225E78C2213E1A390032AFDE /* YYLabel.m in Sources */,
+				225E78BD213E1A390032AFDE /* YYTextLayout.m in Sources */,
+				22E771CD21533CD40079A4B4 /* TTAsyncLayer.m in Sources */,
+				225E78C6213E1A390032AFDE /* YYTextArchiver.m in Sources */,
+				225E78762134F1EC0032AFDE /* TTRichTextConverterContext.m in Sources */,
+				225E78C1213E1A390032AFDE /* YYTextDebugOption.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		225E78352133AB7B0032AFDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				225E78362133AB7B0032AFDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		225E783A2133AB7F0032AFDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				225E783B2133AB7F0032AFDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		225E78402133AB7F0032AFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		225E78412133AB7F0032AFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		225E78432133AB7F0032AFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D729JSY3NU;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = HTML2RT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.HTML2RT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		225E78442133AB7F0032AFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D729JSY3NU;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = HTML2RT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.HTML2RT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		225E78272133AB7B0032AFDE /* Build configuration list for PBXProject "HTML2RT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225E78402133AB7F0032AFDE /* Debug */,
+				225E78412133AB7F0032AFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225E78422133AB7F0032AFDE /* Build configuration list for PBXNativeTarget "HTML2RT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225E78432133AB7F0032AFDE /* Debug */,
+				225E78442133AB7F0032AFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 225E78242133AB7B0032AFDE /* Project object */;
+}
