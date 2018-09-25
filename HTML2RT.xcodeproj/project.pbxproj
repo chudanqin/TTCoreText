@@ -58,9 +58,10 @@
 		225E78DD213E1D8A0032AFDE /* TTPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78DB213E1D8A0032AFDE /* TTPageCell.m */; };
 		225E78DE213E1D8A0032AFDE /* TTPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225E78DC213E1D8A0032AFDE /* TTPageCell.xib */; };
 		225E78E2214116CA0032AFDE /* TTTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 225E78E1214116CA0032AFDE /* TTTextLayout.m */; };
+		22C6654E215A1402007005DF /* TTTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C6654D215A1402007005DF /* TTTextAttachment.m */; };
 		22E771C721523F7A0079A4B4 /* TTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771C621523F7A0079A4B4 /* TTLabel.m */; };
 		22E771CD21533CD40079A4B4 /* TTAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */; };
-		22E771D0215344EA0079A4B4 /* TTTextSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E771CF215344EA0079A4B4 /* TTTextSlice.m */; };
+		22F7A2D0215A2B72000E3F84 /* TTLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F7A2CF215A2B72000E3F84 /* TTLayoutManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +164,8 @@
 		225E78DC213E1D8A0032AFDE /* TTPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTPageCell.xib; sourceTree = "<group>"; };
 		225E78E0214116CA0032AFDE /* TTTextLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTextLayout.h; sourceTree = "<group>"; };
 		225E78E1214116CA0032AFDE /* TTTextLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextLayout.m; sourceTree = "<group>"; };
+		22C6654C215A1402007005DF /* TTTextAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTextAttachment.h; sourceTree = "<group>"; };
+		22C6654D215A1402007005DF /* TTTextAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextAttachment.m; sourceTree = "<group>"; };
 		22DABAC2215397BF00B89062 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		22DABAC3215397BF00B89062 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		22DABAC42153C38200B89062 /* TTAtomicDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAtomicDef.h; sourceTree = "<group>"; };
@@ -170,8 +173,8 @@
 		22E771C621523F7A0079A4B4 /* TTLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLabel.m; sourceTree = "<group>"; };
 		22E771CB21533CD40079A4B4 /* TTAsyncLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAsyncLayer.h; sourceTree = "<group>"; };
 		22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAsyncLayer.m; sourceTree = "<group>"; };
-		22E771CE215344EA0079A4B4 /* TTTextSlice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTextSlice.h; sourceTree = "<group>"; };
-		22E771CF215344EA0079A4B4 /* TTTextSlice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextSlice.m; sourceTree = "<group>"; };
+		22F7A2CE215A2B72000E3F84 /* TTLayoutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTLayoutManager.h; sourceTree = "<group>"; };
+		22F7A2CF215A2B72000E3F84 /* TTLayoutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTLayoutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,13 +395,15 @@
 			children = (
 				22E771CB21533CD40079A4B4 /* TTAsyncLayer.h */,
 				22E771CC21533CD40079A4B4 /* TTAsyncLayer.m */,
+				22DABAC42153C38200B89062 /* TTAtomicDef.h */,
 				22E771C521523F7A0079A4B4 /* TTLabel.h */,
 				22E771C621523F7A0079A4B4 /* TTLabel.m */,
+				22F7A2CE215A2B72000E3F84 /* TTLayoutManager.h */,
+				22F7A2CF215A2B72000E3F84 /* TTLayoutManager.m */,
+				22C6654C215A1402007005DF /* TTTextAttachment.h */,
+				22C6654D215A1402007005DF /* TTTextAttachment.m */,
 				225E78E0214116CA0032AFDE /* TTTextLayout.h */,
 				225E78E1214116CA0032AFDE /* TTTextLayout.m */,
-				22E771CE215344EA0079A4B4 /* TTTextSlice.h */,
-				22E771CF215344EA0079A4B4 /* TTTextSlice.m */,
-				22DABAC42153C38200B89062 /* TTAtomicDef.h */,
 			);
 			path = CT;
 			sourceTree = "<group>";
@@ -495,7 +500,6 @@
 				225E78342133AB7B0032AFDE /* ViewController.m in Sources */,
 				225E78C0213E1A390032AFDE /* YYTextKeyboardManager.m in Sources */,
 				225E783F2133AB7F0032AFDE /* main.m in Sources */,
-				22E771D0215344EA0079A4B4 /* TTTextSlice.m in Sources */,
 				225E78C7213E1A390032AFDE /* YYTextRubyAnnotation.m in Sources */,
 				225E78602133AC0F0032AFDE /* parser.c in Sources */,
 				225E7882213926790032AFDE /* KatanaObjC.m in Sources */,
@@ -504,6 +508,7 @@
 				225E7870213418E50032AFDE /* TTRichTextGenerator.m in Sources */,
 				225E785E2133AC0F0032AFDE /* katana.tab.c in Sources */,
 				225E78DD213E1D8A0032AFDE /* TTPageCell.m in Sources */,
+				22C6654E215A1402007005DF /* TTTextAttachment.m in Sources */,
 				225E78CB213E1A390032AFDE /* UIPasteboard+YYText.m in Sources */,
 				225E78BA213E1A390032AFDE /* YYTextContainerView.m in Sources */,
 				225E78732134EE940032AFDE /* TTRichTextDeclarationConverter.m in Sources */,
@@ -514,6 +519,7 @@
 				225E78612133AC0F0032AFDE /* tokenizer.c in Sources */,
 				225E78B9213E1A390032AFDE /* YYTextMagnifier.m in Sources */,
 				225E78C8213E1A390032AFDE /* YYTextUtilities.m in Sources */,
+				22F7A2D0215A2B72000E3F84 /* TTLayoutManager.m in Sources */,
 				225E78C5213E1A390032AFDE /* YYTextAttribute.m in Sources */,
 				22E771C721523F7A0079A4B4 /* TTLabel.m in Sources */,
 				225E78BF213E1A390032AFDE /* YYTextSelectionView.m in Sources */,

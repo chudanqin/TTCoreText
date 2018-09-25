@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TTTextSlice.h"
+#import "TTTextLayout.h"
 
 @interface TTLabel : UIView
 
-@property (nonatomic, strong) TTTextSlice *textSlice;
+@property (nonatomic, strong) TTTextLayout *textLayout;
 
 @property (nonatomic, assign) NSTimeInterval fadeDurationOnAayncDisplay;
 

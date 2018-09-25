@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TTTextSlice.h"
 
 @interface TTTextContainer : NSObject
 
@@ -19,17 +18,41 @@
 
 @property (nonatomic, strong) NSArray<UIBezierPath *> *exclusionPaths;
 
+- (CGPathRef)textPath:(CGRect *)boundingRect;
+
 @end
+
+typedef NS_ENUM(NSInteger, TTTextVerticalAlignment) {
+    TTTextVerticalAlignmentCenter = 0,
+    TTTextVerticalAlignmentTop,
+    TTTextVerticalAlignmentBottom,
+};
 
 @interface TTTextLayout : NSObject
 
 @property (nonatomic, readonly) TTTextContainer *textContainer;
 
+@property (nonatomic, readonly) CGPathRef path;
+
+@property (nonatomic, readonly) CGRect boundingRect;
+
 @property (nonatomic, readonly) NSAttributedString *text;
 
-@property (nonatomic, readonly) NSArray<TTTextSlice *> *textSlices;
+@property (nonatomic, readonly) CFRange range;
 
-+ (instancetype)textLayoutWithTextContainer:(TTTextContainer *)textContainer
-                                       text:(NSAttributedString *)text;
+@property (nonatomic, readonly) CFRange visibleRange;
+
+@property (nonatomic, readonly) CGSize size;
+
+@property (nonatomic, assign) TTTextVerticalAlignment verticalAlignment;
+
++ (instancetype)loadWithText:(NSAttributedString *)text
+                       range:(CFRange)range
+               textContainer:(TTTextContainer *)textContainer;
+
+- (BOOL)reload;
+
+- (void)drawInContext:(CGContextRef)context
+          isCancelled:(BOOL (^)(void))isCancelled;
 
 @end

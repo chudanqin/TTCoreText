@@ -39,8 +39,8 @@
     self.layer.contentsScale = [UIScreen mainScreen].scale;
 }
 
-- (void)setTextSlice:(TTTextSlice *)textSlice {
-    _textSlice = textSlice;
+- (void)setTextLayout:(TTTextLayout *)textLayout {
+    _textLayout = textLayout;
     [self.layer setNeedsDisplay];
 }
 
@@ -51,7 +51,7 @@
 }
 
 - (void)layer:(CALayer *)layer drawInRect:(CGRect)rect context:(CGContextRef)context isCancelled:(BOOL (^)(void))isCancelled {
-    [_textSlice drawInContext:UIGraphicsGetCurrentContext() isCancelled:isCancelled];
+    [_textLayout drawInContext:UIGraphicsGetCurrentContext() isCancelled:isCancelled];
 }
 
 - (void)layer:(CALayer *)layer didDisplay:(BOOL)finished {

@@ -10,6 +10,18 @@
 #import "TTXMLParser.h"
 #import "AppDelegate.h"
 
+@interface TTObject : NSObject
+@property (nonatomic, copy) dispatch_block_t block;
+@end
+
+@implementation TTObject
+
+- (void)dealloc
+{
+    NSLog(@"TTObject dealloc");
+}
+@end
+
 @interface AppDelegate () <TTHTMLParserDelegate>
 
 @end

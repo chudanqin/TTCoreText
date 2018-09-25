@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "TTLabel.h"
-#import "TTTextLayout.h"
+#import "TTLayoutManager.h"
 
 @interface TTLabelCell : UICollectionViewCell
 @property (nonatomic) TTLabel *label;
@@ -39,11 +39,16 @@
 
 @property (nonatomic) NSAttributedString *attributedText;
 
-@property (nonatomic) TTTextLayout *textLayout;
+@property (nonatomic) TTLayoutManager *layoutManager;
 
 @end
 
 @implementation ViewController
+
+- (void)dealloc
+{
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,26 +76,25 @@
 }
 
 - (void)viewDidLayoutSubviews {
-    if (_textLayout == nil) {
+    if (_layoutManager == nil) {
         NSDate *date = [NSDate date];
         TTTextContainer *textContainer = [[TTTextContainer alloc] init];
         textContainer.size = _collectionView.bounds.size;
         textContainer.padding = UIEdgeInsetsMake(5.0, 10.0, 5.0, 10.0);
-        _textLayout = [TTTextLayout textLayoutWithTextContainer:textContainer text:_attributedText];
+        _layoutManager = [TTLayoutManager loadWithTextContainer:textContainer text:_attributedText];
         NSTimeInterval ti = [NSDate date].timeIntervalSince1970 - date.timeIntervalSince1970;
-        NSLog(@"%f", ti);
-//        [_collectionView reloadData];
+        NSLog(@"--%f", ti);
     }
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _textLayout.textSlices.count;
+    return _layoutManager.textLayouts.count;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TTLabelCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"1" forIndexPath:indexPath];
-    cell.label.textSlice = _textLayout.textSlices[indexPath.row];
+    cell.label.textLayout = _layoutManager.textLayouts[indexPath.row];
     return cell;
 }
 
